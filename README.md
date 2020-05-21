@@ -44,6 +44,22 @@ Practicing Django Web Framework (version 3).
     ```
     (env) ➜ python3 manage.py startapp adoptions
     ```
+- Created the first 2 models: Pet and Vaccine
+- Inside the virtual env, created the first migration file for the adoptions app:
+   ```
+   (env) ➜ python3 manage.py makemigrations
+   ```
+- Checked the migration file was created correctly:
+  ```
+  python3 manage.py showmigrations
+  ```
+- Applied all pending migrations and verify it was done successfully:
+  ```
+  python3 manage.py migrate
+  python3 manage.py showmigrations
+  ```
+- Installed DB Browser for SQLite: https://sqlitebrowser.org/dl/
+
 
 ## License
 This project is licensed under the terms of the MIT License.
