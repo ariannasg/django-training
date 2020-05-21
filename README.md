@@ -68,7 +68,9 @@ Practicing Django Web Framework (version 3).
    (env) ➜ python3 manage.py createsuperuser
    (env) ➜ python3 manage.py runserver
    ```
-- Checked http://127.0.0.1:8000/admin using the super user credentials 
+- Checked http://127.0.0.1:8000/admin using the super user credentials
+- Created routing for home and pet_detail views. 
+Checked result at http://127.0.0.1:8000 and http://127.0.0.1:8000/adoptions/1 
   
 ## License
 This project is licensed under the terms of the MIT License.
