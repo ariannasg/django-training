@@ -63,7 +63,13 @@ Practicing Django Web Framework (version 3).
    ```
    (env) ➜ python3 manage.py load_data
    ```
-
+- Inside the virtual env, created a super user to access the admin site and run the app:
+   ```
+   (env) ➜ python3 manage.py createsuperuser
+   (env) ➜ python3 manage.py runserver
+   ```
+- Checked http://127.0.0.1:8000/admin using the super user credentials 
+  
 ## License
 This project is licensed under the terms of the MIT License.
 Please see [LICENSE](LICENSE.md) for details.
