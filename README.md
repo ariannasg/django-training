@@ -31,11 +31,21 @@ https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurat
     (env) ➜ pip install django==3.0.3
     (env) ➜ pip freeze
     ```
- - Inside the virtual env, created the django project "wisdompets":
+- Inside the virtual env, created the django project "wisdompets":
     ```
     (env) ➜ django-admin startproject wisdompets
     ```
- 
+- Inside the virtual env, run project:
+    ```
+    (env) ➜ cd wisdompets
+    (env) ➜ python3 manage.py runserver
+    ```
+- Visited URL: http://127.0.0.1:8000/ to make sure the server was up.
+- Inside the virtual env, created a django app called adoptions:
+    ```
+    (env) ➜ python3 manage.py startapp adoptions
+    ```
+
 ## License
 This project is licensed under the terms of the MIT License.
 Please see [LICENSE](LICENSE.md) for details.
