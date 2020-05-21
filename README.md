@@ -19,13 +19,12 @@ Practicing Django Web Framework (version 3).
 
 ## Steps taken to setup the project
 - Installed python 3: https://www.python.org/downloads/.
-- Configured the IDE Interpreter to use python 3 and setup the run configuration: 
-https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
 - Created and activated a virtual environment where we could install django and any other packages needed:
     ```
     python3 -m venv env
     source env/bin/activate
     ```
+- Configured the IDE Interpreter to use the python3 from the virtual environment. 
 - Inside the virtual env, installed django and checked all dependencies were install correctly:
     ```
     (env) ➜ pip install django==3.0.3
