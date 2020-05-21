@@ -4,7 +4,7 @@
 
 * [Description](#description)
 * [Objectives](#objectives)
-* [Local setup](#local-setup)
+* [Steps taken to setup the project](#steps-taken-to-setup-the-project)
 * [License](#license)
 
 ## Description
@@ -17,17 +17,25 @@ Also, practice how to incorporate CSS and JavaScript to enhance the style and us
 ## Objectives
 Practicing Django Web Framework (version 3).
 
-## Local setup
-Follow the instructions to get the project up and running for local development and testing purposes.
-- Install python 3: https://www.python.org/downloads/.
-- Configure the IDE Interpreter to use python 3 and setup the run configuration: 
+## Steps taken to setup the project
+- Installed python 3: https://www.python.org/downloads/.
+- Configured the IDE Interpreter to use python 3 and setup the run configuration: 
 https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html?keymap=secondary_macos.
-- Ensure you are using the latest pip and install Django 3.0.3 by running: 
+- Created and activated a virtual environment where we could install django and any other packages needed:
     ```
-    pip3 install --upgrade pip
-    pip3 install django==3.0.3
+    python3 -m venv env
+    source env/bin/activate
     ```
-
+- Inside the virtual env, installed django and checked all dependencies were install correctly:
+    ```
+    (env) ➜ pip install django==3.0.3
+    (env) ➜ pip freeze
+    ```
+ - Inside the virtual env, created the django project "wisdompets":
+    ```
+    (env) ➜ django-admin startproject wisdompets
+    ```
+ 
 ## License
 This project is licensed under the terms of the MIT License.
 Please see [LICENSE](LICENSE.md) for details.
