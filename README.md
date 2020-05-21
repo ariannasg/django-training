@@ -58,8 +58,11 @@ Practicing Django Web Framework (version 3).
   python3 manage.py migrate
   python3 manage.py showmigrations
   ```
-- Installed DB Browser for SQLite: https://sqlitebrowser.org/dl/
-
+- Installed DB Browser for SQLite: https://sqlitebrowser.org/dl/ and checked db
+- Inside the virtual env, run the command to load data into the database:
+   ```
+   (env) ➜ python3 manage.py load_data
+   ```
 
 ## License
 This project is licensed under the terms of the MIT License.
