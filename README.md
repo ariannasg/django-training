@@ -18,13 +18,13 @@ Also, practice how to incorporate CSS and JavaScript to enhance the style and us
 Practicing creating web apps using Django Web Framework (version 3.0.3).
 
 ## Steps taken to setup the project
-- Installed python 3: https://www.python.org/downloads/.
+- Installed python 3: https://www.python.org/downloads/
 - Created and activated a virtual environment where we could install django and any other packages needed:
     ```
     python3 -m venv env
     source env/bin/activate
     ```
-- Configured the IDE Interpreter to use the python3 from the virtual environment. 
+- Configured the IDE Interpreter to use the python3 from the virtual environment
 - Inside the virtual env, installed django and checked all dependencies were install correctly:
     ```
     (env) ➜ pip install django==3.0.3
@@ -69,8 +69,9 @@ Practicing creating web apps using Django Web Framework (version 3.0.3).
    (env) ➜ python3 manage.py runserver
    ```
 - Checked http://127.0.0.1:8000/admin using the super user credentials
-- Created routing for home and pet_detail views. 
+- Created routing for home and pet_detail views 
 Checked result at http://127.0.0.1:8000 and http://127.0.0.1:8000/adoptions/1 
+- Modified views and templates accordingly
   
 ## License
 This project is licensed under the terms of the MIT License.
