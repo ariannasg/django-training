@@ -3,6 +3,7 @@ APP_NAME=adoptions
 
 .PHONY: install
 install:
+	pip install pipenv
 	pipenv install
 
 .PHONY: test
