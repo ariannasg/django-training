@@ -1,23 +1,32 @@
+PROJECT_NAME=wisdompets
+APP_NAME=adoptions
+
 .PHONY: install
 install:
-	pip install -r requirements.txt
+	pipenv install
 
 .PHONY: test
 test:
-	cd wisdompets && python3 manage.py test
+	cd $(PROJECT_NAME) && pipenv run python3 manage.py test
 
-.PHONY: coverage-report
-coverage-report:
-	cd wisdompets && coverage run manage.py test && coverage report
+PHONY: coverage
+coverage:
+	cd $(PROJECT_NAME) && pipenv run coverage run manage.py test
 
 .PHONY: coverage-html
 coverage-html:
-	cd wisdompets && coverage run manage.py test && coverage html
+	$(MAKE) coverage
+	cd $(PROJECT_NAME) && pipenv run coverage html
+
+.PHONY: coverage-report
+coverage-report:
+	$(MAKE) coverage
+	cd $(PROJECT_NAME) && pipenv run coverage report
 
 .PHONY: lint
 lint:
-	cd wisdompets && pylint wisdompets adoptions --rcfile=.pylintrc
+	cd $(PROJECT_NAME) && pipenv run pylint $(PROJECT_NAME) $(APP_NAME) --rcfile=.pylintrc
 
 .PHONY: security
 security:
-	safety check
+	pipenv run safety check

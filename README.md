@@ -85,6 +85,8 @@ Checked result at http://127.0.0.1:8000 and http://127.0.0.1:8000/adoptions/1
 - Created a makefile with the basic commands to run locally and during CI/CD
 - Configured a CI workflow for using github-actions
 - Installed the coverage package, created a config file for it and and added commands to the makefile for generating test coverage
+- Configured project to use pipenv
+
 
 ## License
 This project is licensed under the terms of the MIT License.
